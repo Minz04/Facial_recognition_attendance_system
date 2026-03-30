@@ -1,0 +1,25 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore PyCache
+__pycache__/
+
+# Ignore all subfolders & files in database
+database/*
+
+# But keep .onnx model(s) if needed
+!database/*.onnx
+
+# Keep .gitkeep if you want to preserve empty folder
+!database/.gitkeep
+
+# Ignore model weights if large
+*.onnx
+*.h5
+*.pth
+*.tflite
+*.pkl
+
+# Dataset folders
+custom_dataset/images/
+custom_dataset/labels/
